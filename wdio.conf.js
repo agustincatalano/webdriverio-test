@@ -9,7 +9,7 @@ exports.config = {
     runner: 'local',
     //
     // Override default path ('/wd/hub') for chromedriver service.
-    path: '/wd/hub',
+    path: '/',
     //
     // ==================
     // Specify Test Files
@@ -130,7 +130,11 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 60000,
+        require: ['@babel/register']
+    },
+    cucumberOpts: {
+        requireModule: ['@babel/register']
     },
     //
     // =====

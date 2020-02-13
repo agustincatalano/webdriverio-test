@@ -1,6 +1,6 @@
 
 
-export default class Page {
+ class Page {
     constructor() {
         this.title = 'My Page'
     }
@@ -9,3 +9,5 @@ export default class Page {
         browser.url(path)
     }
 }
+
+export default Page

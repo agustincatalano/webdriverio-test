@@ -1,6 +1,8 @@
 import Page from './page'
+//const Page = require('./page')
 
-class HomePage extends Page {
+
+ class HomePage extends Page {
 
     open() {
         super.open('')
